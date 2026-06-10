@@ -3,12 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NeuronDev | Architecture</title>
+    <title>NeuronDev | Secure Frontend Architecture</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="NeuronDev provides secure, high-performance frontend architecture. We build scalable web solutions with absolute precision. Professional frontend development services.">
+    <meta property="og:title" content="NeuronDev | Secure Frontend Architecture">
+    <meta property="og:description" content="High-performance, maintainable, and secure frontend codebases.">
+    
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
         body { background-color: #0b0f1a; color: #fff; line-height: 1.6; }
 
         /* Nav */
+        header { border-bottom: 1px solid #1a1f2e; }
         nav { display: flex; justify-content: space-between; align-items: center; padding: 25px 80px; }
         .brand { display: flex; align-items: center; gap: 10px; font-weight: bold; }
         .logo-small { width: 35px; height: 35px; border-radius: 50%; animation: rotate 10s linear infinite; }
@@ -19,7 +26,7 @@
         .btn-get-started { background: linear-gradient(90deg, #ff5f3f, #ff8c00); padding: 8px 20px; border-radius: 20px; text-decoration: none; color: white; font-size: 0.75rem; }
 
         /* Content */
-        .section { padding: 100px 80px; border-top: 1px solid #1a1f2e; }
+        .section { padding: 100px 80px; border-bottom: 1px solid #1a1f2e; }
         .hero { display: flex; align-items: center; justify-content: space-between; padding: 100px 80px; min-height: 80vh; }
         .text-content { max-width: 500px; }
         h1 { font-size: 3.2rem; line-height: 1; margin-bottom: 20px; }
@@ -28,7 +35,7 @@
         @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-20px); } }
 
         .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 40px; }
-        .service-card { border: 1px solid #1a1f2e; padding: 30px; border-radius: 10px; }
+        .service-card { border: 1px solid #1a1f2e; padding: 30px; border-radius: 10px; background: rgba(255,255,255,0.03); }
 
         /* Responsive */
         @media (max-width: 768px) {
@@ -41,71 +48,75 @@
     </style>
 </head>
 <body>
-    <nav>
-        <div class="brand">
-            <img src="1000063417.jpg" class="logo-small">
-            <span>NeuronDev</span>
-        </div>
-        <div class="nav-links">
-            <a href="#">HOME</a>
-            <a href="#about">ABOUT US</a>
-            <a href="#services">SERVICES</a>
-            <a href="#contact">CONTACT</a>
-        </div>
-        <a href="#contact" class="btn-get-started">GET STARTED</a>
-    </nav>
-
-    <div class="hero">
-        <div class="text-content">
-            <h1>SECURE FRONTEND ARCHITECTURE</h1>
-            <p>Bridging complex UI designs with high-performance, maintainable, and secure codebases.</p>
-            <a href="#services" class="btn-explore">EXPLORE NOW</a>
-        </div>
-        <div class="visual-element"></div>
-    </div>
-
-    <section id="about" class="section">
-        <h2 style="margin-bottom: 20px;">ABOUT US</h2>
-        <div style="max-width: 800px;">
-            <p style="margin-bottom: 15px;">NeuronDev is an entity forged from an obsession with architectural precision.</p>
-            <p style="margin-bottom: 15px;"><strong>The Protocol:</strong> We are in our active development phase—refining infrastructure, debugging daily, and building from zero-based logic. We believe in data-driven results over empty promises.</p>
-            <p><strong>Integrity:</strong> We operate on a 'Zero-Compromise' protocol. If your requirements align with our architectural capabilities, we execute with absolute precision. If a project exceeds our capacity, we will tell you upfront.</p>
-        </div>
-    </section>
-
-    <section id="services" class="section">
-        <h2>SERVICES</h2>
-        <div class="service-grid">
-            <div class="service-card">
-                <h3>Frontend Implementation</h3>
-                <p style="opacity: 0.7; margin-top: 10px;">Translating Figma prototypes into secure, pixel-perfect, and highly optimized code structures.</p>
+    <header>
+        <nav>
+            <div class="brand">
+                <img src="1000063417.jpg" class="logo-small" alt="NeuronDev Logo">
+                <span>NeuronDev</span>
             </div>
-            <div class="service-card">
-                <h3>Interaction Engineering</h3>
-                <p style="opacity: 0.7; margin-top: 10px;">Refining interface logic and responsiveness to ensure intuitive user experiences under load.</p>
+            <div class="nav-links">
+                <a href="#home">HOME</a>
+                <a href="#about">ABOUT US</a>
+                <a href="#services">SERVICES</a>
+                <a href="#contact">CONTACT</a>
             </div>
-            <div class="service-card">
-                <h3>Security & Performance Audit</h3>
-                <p style="opacity: 0.7; margin-top: 10px;">Reviewing codebases to prevent vulnerabilities and ensure lightning-fast performance.</p>
+            <a href="#contact" class="btn-get-started">GET STARTED</a>
+        </nav>
+    </header>
+
+    <main id="home">
+        <section class="hero">
+            <div class="text-content">
+                <h1>SECURE FRONTEND ARCHITECTURE</h1>
+                <p>Bridging complex UI designs with high-performance, maintainable, and secure codebases.</p>
+                <a href="#services" class="btn-explore">EXPLORE NOW</a>
             </div>
-        </div>
-    </section>
+            <div class="visual-element" role="img" aria-label="NeuronDev Architectural Abstract"></div>
+        </section>
+
+        <section id="about" class="section">
+            <h2 style="margin-bottom: 20px;">ABOUT US</h2>
+            <div style="max-width: 800px;">
+                <p style="margin-bottom: 15px;">NeuronDev is an entity forged from an obsession with architectural precision.</p>
+                <p style="margin-bottom: 15px;"><strong>The Protocol:</strong> We apply a rigorous engineering standard to every build—prioritizing infrastructure stability, clean code, and zero-based architectural logic. We replace empty promises with data-driven results and measurable performance.</p>
+                <p><strong>Integrity:</strong> We operate on a 'Zero-Compromise' protocol. Every project we undertake is executed with absolute precision, ensuring that your digital assets are not only visually compelling but robust, secure, and ready to scale.</p>
+            </div>
+        </section>
+
+        <section id="services" class="section">
+            <h2>SERVICES</h2>
+            <div class="service-grid">
+                <article class="service-card">
+                    <h3>Frontend Implementation</h3>
+                    <p style="opacity: 0.7; margin-top: 10px;">Translating Figma prototypes into secure, pixel-perfect, and highly optimized code structures.</p>
+                </article>
+                <article class="service-card">
+                    <h3>Interaction Engineering</h3>
+                    <p style="opacity: 0.7; margin-top: 10px;">Refining interface logic and responsiveness to ensure intuitive user experiences under load.</p>
+                </article>
+                <article class="service-card">
+                    <h3>Security & Performance Audit</h3>
+                    <p style="opacity: 0.7; margin-top: 10px;">Reviewing codebases to prevent vulnerabilities and ensure lightning-fast performance.</p>
+                </article>
+            </div>
+        </section>
+    </main>
     
     <footer id="contact" class="section" style="text-align: center;">
         <h2>CONTACT US</h2>
         <p style="margin: 10px 0 30px;">Let's architect something together.</p>
 
         <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-bottom: 50px;">
-            <a href="mailto:echooffailure559@gmail.com" title="Email" style="background: white; padding: 8px; border-radius: 6px;">
+            <a href="mailto:echooffailure559@gmail.com" aria-label="Email NeuronDev" style="background: white; padding: 8px; border-radius: 6px;">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="black"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
             </a>
-            <a href="https://github.com/grassblock-sys" target="_blank" title="GitHub" style="background: white; padding: 8px; border-radius: 6px;">
+            <a href="https://github.com/grassblock-sys" target="_blank" aria-label="GitHub" style="background: white; padding: 8px; border-radius: 6px;">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="black"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
             </a>
-            <a href="https://www.linkedin.com/in/mr-satria-681941412" target="_blank" title="LinkedIn" style="background: white; padding: 8px; border-radius: 6px;">
+            <a href="https://www.linkedin.com/in/mr-satria-681941412" target="_blank" aria-label="LinkedIn" style="background: white; padding: 8px; border-radius: 6px;">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="black"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
             </a>
-            <a href="https://x.com/GamerLembaga" target="_blank" title="X" style="background: white; padding: 8px; border-radius: 6px;">
+            <a href="https://x.com/GamerLembaga" target="_blank" aria-label="X" style="background: white; padding: 8px; border-radius: 6px;">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="black"><path d="M23.953 4.57a10 10 0 0 1-2.825.775 4.958 4.958 0 0 0 2.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 0 0-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 0 0-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 0 1-2.228-.616v.06a4.923 4.923 0 0 0 3.946 4.827 4.996 4.996 0 0 1-2.212.085 4.936 4.936 0 0 0 4.604 3.417 9.867 9.867 0 0 1-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 0 0 7.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0 0 24 4.59z"/></svg>
             </a>
         </div>
